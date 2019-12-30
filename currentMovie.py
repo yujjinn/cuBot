@@ -175,7 +175,7 @@ for i in range(1,current_size) :
 
     arr_current_words.append(keywords)
 
-    db = pymysql.connect(host = 'ec2-18-179-178-134.ap-northeast-1.compute.amazonaws.com', user = 'root', password = 'ehdrlehdrl1996^^' ,db = 'mysql')
+    db = pymysql.connect(host = 'aws주소', user = '사용자명', password = '비밀번호' ,db = 'db명')
     cursor = db.cursor()
     test_director = "test"
     test_actor = "testActor"
