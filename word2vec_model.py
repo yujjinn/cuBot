@@ -14,8 +14,8 @@ su_model = gensim.models.Word2Vec.load('model.h5')
 
 
 
-db = pymysql.connect(host='ec2-13-231-211-121.ap-northeast-1.compute.amazonaws.com', \
-                     user='root', password='ehdrlehdrl1996^^', db='mysql')
+db = pymysql.connect(host='호스트명_aws주소', \
+                     user='root', password='비밀번호', db='db명')
 
 
 def calculation_similarity(s1,s2):
