@@ -1,0 +1,120 @@
+body {
+  font-family: monospace;
+}
+h1 {
+  /*background-color: yellow;*/
+  display: inline-block;
+  font-size: 4em;
+  margin: 0;
+  padding: 14px;
+}
+h3 {
+  color: white;
+  font-size: 20px;
+  margin-top: 3px;
+  text-align: center;
+}
+#chatbox {
+	display: table;
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%; 
+	/*mod*/
+	margin-top: 60px;
+}
+#chatbox button
+{
+	border: 1px solid #B94646;
+    background-color: rgba(0,0,0,0);
+    color: #B94646;
+    padding: 5px;
+    font-size: 2em;
+}
+
+#init_click
+{
+  border: 1px solid #B94646;
+  background-color: rgba(0,0,0,0);
+  color: #B94646;
+  padding: 5px;
+  font-size: 2em;
+}
+#userInput {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  /*mod*/
+  margin-top: 60px;
+}
+#textInput {
+  width: 90%;
+  border: none;
+  border-bottom: 3px solid black;
+  font-family: monospace;
+  font-size: 3em;
+}
+.userText {
+  color: white;
+  font-family: monospace;
+  font-size: 4em;
+  text-align: right;
+  line-height: 4em;
+}
+.userText span {
+  background-color: #28288C;
+  padding: 10px;
+  border-radius: 10px 10px 10px 10px;
+  width: 80%;
+}
+.botText {
+	color: white;
+	font-family: monospace;
+	font-size: 3em;
+	text-align: left;
+	line-height: 2;
+	width: 70%;
+}
+.botText span {
+  display: table-cell;
+  background-color: #FF8E99;
+  border-radius: 2px 2px 2px 2px;
+}
+[id*='check_form'] input[type= "checkbox"] {
+	width: 3em; 
+	height: 3em;
+}
+[id*='check_form'] input[type= "checkbox"] + label {
+	width: 3em; 
+	height: 3em;
+	font-size: 3em;
+}
+
+#tidbit {
+  position: absolute;
+  /*mod*/
+  bottom: 0;
+  right: 0;
+  width: 400px;
+}
+.boxed {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  /*mod*/
+  margin-top: 60px;
+  border: 1px solid #FFD2D2;
+}
+.box {
+  border: 2px solid black;
+}
+table {
+  width: 100%;
+  border: 1px solid #444444;
+  border-collapse: collapse;
+  font-size: 2em;
+}
+th, td {
+  border: 1px solid #444444;
+  padding: 10px;
+  font-size: 1em;
+}

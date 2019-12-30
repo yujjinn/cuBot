@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <title>큐빅</title>
+  <head>
+    <link href="{{ url_for('static', filename='my.css') }}" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <img />
+    <center>
+      <h1>
+        Q.Big
+      </h1>
+    </center>
+    <h3>
+    </h3>
+    <div class="box"></div>
+    <div class="boxed">
+        <div id="chatbox">
+          <p class="botText">
+            <span> 안녕 난 큐봇이야 ° ͜ʖ ͡° 뭐 보고 싶어?</span> <br>
+              <form method="POST" id="check_form" name='my_form'>
+                <input type='checkbox' name='mycheck' value='drama_check' id = 'ch1'>
+		<label for='ch1'>드라마</label>
+                <input type='checkbox' name='mycheck' value='movie_check' id='ch2'>
+		<label for='ch2'>영화</label>
+                <input type='checkbox' name='mycheck' value='book_check' id = 'ch3'>
+		<label for='ch3'>책  </label>
+                <input type='button' id ='init_click' value='전체 선택' onclick='CheckAll(document.my_form.mycheck)'/><hr>
+                <input type='button' id='init_click' value='클릭' onclick='genre_get(document.my_form.mycheck)'/>
+            </form><br>
+          </p>
+        </div>
+        <div id="userInput">
+          <input id="textInput" type="text" name="msg" placeholder="키워드를 입력하세요" />
+          <input type='button' id='send_kwd' value='전송' onclick = 'send_keyword()'/>
+      </div>
+    </div>
+  </body>
+  <script src="{{ url_for('static', filename='my.js') }}" ></script>
+<!--  <script src="{{ url_for('static', filename='my.js') }}" ></script>-->
+</html>
